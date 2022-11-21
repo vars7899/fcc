@@ -53,9 +53,7 @@ app.get("/api/:given_data", (req, res) => {
   });
 });
 
-const PORT = 3000 || process.env.PORT;
-
 // listen for requests :)
-var listener = app.listen(PORT, function () {
+var listener = app.listen(process.env.PORT, function () {
   console.log("Your app is listening on port " + listener.address().port);
 });
